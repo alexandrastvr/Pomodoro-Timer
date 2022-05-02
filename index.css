@@ -1,0 +1,199 @@
+html{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body{
+    
+    margin: 0;
+    padding: 30px;
+    background-image: linear-gradient(to bottom right, #A0D7D9, #FBE7A3);
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    box-sizing: border-box;
+    height: 350px;
+    width: 550px;
+    display: grid;
+    grid-template-columns: 15% auto 15% 2% 1%;
+    grid-template-rows: 32% 30% 32% 6%;
+}
+
+.rotita1{
+    grid-column: -3/-2;
+    grid-row: 2/3;
+    background-color: blanchedalmond;
+    border-bottom: 2px solid #422009;
+    border-top: 2px solid #422009;
+    border-right: 1px solid #422009;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #FBE7A3;
+}
+.linie{
+   border-top: 0.5px solid #422009;
+   height: 50%;
+}
+
+.rotita2{
+    grid-column: -2/-1;
+    grid-row: 2/3;
+    border-left: 7px solid #422009;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    width: 0;
+    
+}
+
+.picior{
+    /*grid-column: 2/3;
+    grid-row: -1/-2;
+    background-color: blanchedalmond;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;*/
+    grid-column: 2/3;
+    grid-row: -1/-2;
+    background-color: #422009;;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top: 1px solid #FBE7A3
+}
+.ceas{
+    grid-column: 1/-3;
+    grid-row: 1/-2;
+    border: 10px solid #422009;
+    background-color: hsl(36, 100%, 85%);
+    border-radius: 60px;
+    padding: 10px;
+}
+.interior-ceas{
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0px;
+    border: 2px solid #422009;
+    border-radius: 40px;
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: [ceasStart] 2% [timpStart] auto [timpEnd] 1% [triunghiStart] 3% [triunghiEnd] 0.5% [slotStart] 15% [slotEnd] 0.5% [butonStart] 5% [butonEnd] 1% [ceasEnd];
+    grid-template-rows: [ceasSus] 4% [afisaj1Sus] 8% [afisaj1Jos] 4% [timpSus] 80% [timpJos] 3% [ceasJos];
+}
+.timp{
+    grid-column: timpStart/timpEnd;
+    grid-row: timpSus/timpJos;
+    background-color: hsl(24, 76%, 7%);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0px;
+    font-size: 250px;
+}
+
+.cursaTriunghi{
+    grid-column: triunghiStart/triunghiEnd;
+    grid-row: timpSus/timpJos;
+    display: flex;
+    flex-direction: column;
+}
+.poz{
+    height: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.activ{
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-left: 15px solid #a8141c;
+    border-left: 15px solid #F04634;
+    border-bottom: 8px solid transparent;
+}
+.afisajSlot{
+    grid-column: slotStart/slotEnd;
+    grid-row: timpSus/timpJos;
+    background-color: hsl(24, 76%, 7%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.slot{
+    height: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.slot > h3{
+    font-size: 20px;
+    text-align: center;
+}
+
+.butoane{
+    grid-column: butonStart/butonEnd;
+    grid-row: timpSus/timpJos;
+    display: flex;
+    flex-direction: column;
+}
+.buton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 33.33%;
+}
+.bulina{
+    background-color: #a8141c;
+    background-color: #F04634;
+    border:none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.rosii{
+    grid-column: timpStart/timpEnd;
+    grid-row: afisaj1Sus/afisaj1Jos;
+    background-image: linear-gradient(to bottom right, #A0D7D9, #FBE7A3);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+.rosie{
+    width: 33.33%;
+    border-left: 1px solid blanchedalmond;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rosie:nth-child(1){
+    border-left: none;
+}
+.rosie > img{
+    width: 15px;
+}
+.focusedWork{
+    grid-column: slotStart/slotEnd;
+    grid-row: afisaj1Sus/afisaj1Jos;
+    background-color: hsl(24, 76%, 7%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+  
+
